@@ -29,69 +29,82 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Climate));
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode45});
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode47});
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Терморегистраторы", new System.Windows.Forms.TreeNode[] {
-            treeNode46,
-            treeNode48});
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode50});
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode52});
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Отопление", new System.Windows.Forms.TreeNode[] {
-            treeNode51,
-            treeNode53});
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode55});
             System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
             treeNode57});
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Кондиционер", new System.Windows.Forms.TreeNode[] {
-            treeNode56,
-            treeNode58});
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode59});
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Терморегистраторы", new System.Windows.Forms.TreeNode[] {
+            treeNode58,
             treeNode60});
             System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
             treeNode62});
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Вентиляция", new System.Windows.Forms.TreeNode[] {
-            treeNode61,
-            treeNode63});
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Узел23");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Двери", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode64});
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Отопление", new System.Windows.Forms.TreeNode[] {
+            treeNode63,
             treeNode65});
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode67});
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode69});
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Кондиционер", new System.Windows.Forms.TreeNode[] {
+            treeNode68,
+            treeNode70});
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode72});
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode74});
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("Вентиляция", new System.Windows.Forms.TreeNode[] {
+            treeNode73,
+            treeNode75});
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Тёплые");
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Выходы");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Запасные");
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Двери", new System.Windows.Forms.TreeNode[] {
+            treeNode77,
+            treeNode78,
+            treeNode79});
+            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("Сигнализация");
+            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("Дым");
+            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("Генератор");
+            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("Техника");
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panelWarning = new System.Windows.Forms.Panel();
+            this.WarningMoist = new System.Windows.Forms.Label();
+            this.WarningTemp = new System.Windows.Forms.Label();
+            this.normMoist = new System.Windows.Forms.Label();
             this.Warning2 = new System.Windows.Forms.Label();
             this.Warning1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.normTemp = new System.Windows.Forms.Label();
+            this.warning = new System.Windows.Forms.Label();
             this.buttonCold = new System.Windows.Forms.Button();
             this.buttonWarm = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.chartTemp = new LiveCharts.WinForms.CartesianChart();
             this.chartMoisture = new LiveCharts.WinForms.CartesianChart();
+            this.Min = new System.Windows.Forms.Button();
             this.buttonExcel = new System.Windows.Forms.Button();
+            this.Max = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.weather5 = new System.Windows.Forms.GroupBox();
             this.time4 = new System.Windows.Forms.Label();
             this.pres4 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -102,7 +115,7 @@
             this.weatherDescription4 = new System.Windows.Forms.Label();
             this.weatherMain4 = new System.Windows.Forms.Label();
             this.image_4 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.weather4 = new System.Windows.Forms.GroupBox();
             this.time3 = new System.Windows.Forms.Label();
             this.pres3 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -113,7 +126,7 @@
             this.weatherDescription3 = new System.Windows.Forms.Label();
             this.weatherMain3 = new System.Windows.Forms.Label();
             this.image_3 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.weather3 = new System.Windows.Forms.GroupBox();
             this.time2 = new System.Windows.Forms.Label();
             this.pres2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -124,7 +137,7 @@
             this.weatherDescription2 = new System.Windows.Forms.Label();
             this.weatherMain2 = new System.Windows.Forms.Label();
             this.image_2 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.weather2 = new System.Windows.Forms.GroupBox();
             this.time1 = new System.Windows.Forms.Label();
             this.pres1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -137,7 +150,7 @@
             this.image_1 = new System.Windows.Forms.Panel();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.SMPcity = new System.Windows.Forms.ListBox();
-            this.weather_ = new System.Windows.Forms.GroupBox();
+            this.weather1 = new System.Windows.Forms.GroupBox();
             this.pres = new System.Windows.Forms.Label();
             this.wind_ = new System.Windows.Forms.GroupBox();
             this.deg_ = new System.Windows.Forms.Label();
@@ -149,12 +162,28 @@
             this.weatherMain = new System.Windows.Forms.Label();
             this.image_ = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tech = new System.Windows.Forms.Panel();
+            this.to = new System.Windows.Forms.Label();
+            this.plan = new System.Windows.Forms.PictureBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.database1DataSet = new WindowsFormsApp1.Database1DataSet();
             this.tableColdBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableColdTableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.tableColdTableAdapter();
+            this.account = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -165,7 +194,7 @@
             this.splitContainer5.Panel1.SuspendLayout();
             this.splitContainer5.Panel2.SuspendLayout();
             this.splitContainer5.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelWarning.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -176,20 +205,23 @@
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.weather5.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.weather4.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.weather3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.weather2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.weather_.SuspendLayout();
+            this.weather1.SuspendLayout();
             this.wind_.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tech.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.plan)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableColdBindingSource)).BeginInit();
+            this.account.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -247,44 +279,64 @@
             // 
             // splitContainer5.Panel1
             // 
-            this.splitContainer5.Panel1.Controls.Add(this.panel3);
+            this.splitContainer5.Panel1.Controls.Add(this.panelWarning);
             this.splitContainer5.Panel1.Controls.Add(this.buttonCold);
             this.splitContainer5.Panel1.Controls.Add(this.buttonWarm);
             // 
             // splitContainer5.Panel2
             // 
-            this.splitContainer5.Panel2.Controls.Add(this.monthCalendar1);
+            this.splitContainer5.Panel2.Controls.Add(this.monthCalendar);
             this.splitContainer5.Size = new System.Drawing.Size(206, 805);
             this.splitContainer5.SplitterDistance = 375;
             this.splitContainer5.SplitterWidth = 10;
             this.splitContainer5.TabIndex = 13;
             // 
-            // panel3
+            // panelWarning
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.Warning2);
-            this.panel3.Controls.Add(this.Warning1);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel3.Location = new System.Drawing.Point(5, 107);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(194, 264);
-            this.panel3.TabIndex = 12;
+            this.panelWarning.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelWarning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWarning.Controls.Add(this.WarningMoist);
+            this.panelWarning.Controls.Add(this.WarningTemp);
+            this.panelWarning.Controls.Add(this.normMoist);
+            this.panelWarning.Controls.Add(this.Warning2);
+            this.panelWarning.Controls.Add(this.Warning1);
+            this.panelWarning.Controls.Add(this.normTemp);
+            this.panelWarning.Controls.Add(this.warning);
+            this.panelWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelWarning.Location = new System.Drawing.Point(5, 107);
+            this.panelWarning.Name = "panelWarning";
+            this.panelWarning.Size = new System.Drawing.Size(194, 264);
+            this.panelWarning.TabIndex = 12;
             // 
-            // label5
+            // WarningMoist
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 48);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "нормы влажности:\r\n - для теплой до 65\r\n - для холодной до 65";
+            this.WarningMoist.AutoSize = true;
+            this.WarningMoist.Location = new System.Drawing.Point(4, 189);
+            this.WarningMoist.Name = "WarningMoist";
+            this.WarningMoist.Size = new System.Drawing.Size(89, 16);
+            this.WarningMoist.TabIndex = 7;
+            this.WarningMoist.Text = "WarningMoist";
+            // 
+            // WarningTemp
+            // 
+            this.WarningTemp.AutoSize = true;
+            this.WarningTemp.Location = new System.Drawing.Point(4, 157);
+            this.WarningTemp.Name = "WarningTemp";
+            this.WarningTemp.Size = new System.Drawing.Size(93, 16);
+            this.WarningTemp.TabIndex = 6;
+            this.WarningTemp.Text = "WarningTemp";
+            // 
+            // normMoist
+            // 
+            this.normMoist.AutoSize = true;
+            this.normMoist.Location = new System.Drawing.Point(4, 89);
+            this.normMoist.Name = "normMoist";
+            this.normMoist.Size = new System.Drawing.Size(141, 48);
+            this.normMoist.TabIndex = 5;
+            this.normMoist.Text = "нормы влажности:\r\n - для теплой до 65\r\n - для холодной до 65";
             // 
             // Warning2
             // 
@@ -304,24 +356,24 @@
             this.Warning1.TabIndex = 3;
             this.Warning1.Text = "Warning1";
             // 
-            // label4
+            // normTemp
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 48);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "нормы температуры:\r\n - для теплой от 0 до 6\r\n - для холодной от -4 до -18";
+            this.normTemp.AutoSize = true;
+            this.normTemp.Location = new System.Drawing.Point(4, 25);
+            this.normTemp.Name = "normTemp";
+            this.normTemp.Size = new System.Drawing.Size(177, 48);
+            this.normTemp.TabIndex = 2;
+            this.normTemp.Text = "нормы температуры:\r\n - для теплой от 0 до 6\r\n - для холодной от -4 до -18";
             // 
-            // label2
+            // warning
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Предупреждения";
+            this.warning.AutoSize = true;
+            this.warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.warning.Location = new System.Drawing.Point(2, 0);
+            this.warning.Name = "warning";
+            this.warning.Size = new System.Drawing.Size(175, 25);
+            this.warning.TabIndex = 0;
+            this.warning.Text = "Предупреждения";
             // 
             // buttonCold
             // 
@@ -330,9 +382,9 @@
             this.buttonCold.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCold.Location = new System.Drawing.Point(5, 55);
             this.buttonCold.Name = "buttonCold";
-            this.buttonCold.Size = new System.Drawing.Size(184, 46);
+            this.buttonCold.Size = new System.Drawing.Size(194, 46);
             this.buttonCold.TabIndex = 11;
-            this.buttonCold.Text = "Холодильная";
+            this.buttonCold.Text = "Холодная";
             this.buttonCold.UseVisualStyleBackColor = true;
             this.buttonCold.Click += new System.EventHandler(this.buttonCold_Click);
             // 
@@ -343,19 +395,20 @@
             this.buttonWarm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonWarm.Location = new System.Drawing.Point(5, 3);
             this.buttonWarm.Name = "buttonWarm";
-            this.buttonWarm.Size = new System.Drawing.Size(184, 46);
+            this.buttonWarm.Size = new System.Drawing.Size(194, 46);
             this.buttonWarm.TabIndex = 10;
             this.buttonWarm.Text = "Тёплая";
             this.buttonWarm.UseVisualStyleBackColor = true;
             this.buttonWarm.Click += new System.EventHandler(this.buttonWarm_Click);
             // 
-            // monthCalendar1
+            // monthCalendar
             // 
-            this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 2);
-            this.monthCalendar1.Location = new System.Drawing.Point(4, 6);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.monthCalendar.CalendarDimensions = new System.Drawing.Size(1, 2);
+            this.monthCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.monthCalendar.Location = new System.Drawing.Point(6, 15);
+            this.monthCalendar.Name = "monthCalendar";
+            this.monthCalendar.TabIndex = 0;
             // 
             // splitContainer2
             // 
@@ -369,12 +422,14 @@
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.Min);
             this.splitContainer2.Panel2.Controls.Add(this.buttonExcel);
+            this.splitContainer2.Panel2.Controls.Add(this.Max);
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer2.Panel2.Controls.Add(this.dateTimePicker1);
             this.splitContainer2.Panel2.Controls.Add(this.dateTimePicker2);
             this.splitContainer2.Size = new System.Drawing.Size(1352, 805);
-            this.splitContainer2.SplitterDistance = 784;
+            this.splitContainer2.SplitterDistance = 929;
             this.splitContainer2.SplitterWidth = 10;
             this.splitContainer2.TabIndex = 15;
             // 
@@ -392,7 +447,7 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.chartMoisture);
-            this.splitContainer4.Size = new System.Drawing.Size(784, 805);
+            this.splitContainer4.Size = new System.Drawing.Size(929, 805);
             this.splitContainer4.SplitterDistance = 375;
             this.splitContainer4.SplitterWidth = 10;
             this.splitContainer4.TabIndex = 0;
@@ -404,7 +459,7 @@
             this.chartTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.chartTemp.Location = new System.Drawing.Point(0, 0);
             this.chartTemp.Name = "chartTemp";
-            this.chartTemp.Size = new System.Drawing.Size(784, 375);
+            this.chartTemp.Size = new System.Drawing.Size(929, 375);
             this.chartTemp.TabIndex = 6;
             this.chartTemp.Text = "Температура";
             // 
@@ -415,34 +470,56 @@
             this.chartMoisture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.chartMoisture.Location = new System.Drawing.Point(0, 0);
             this.chartMoisture.Name = "chartMoisture";
-            this.chartMoisture.Size = new System.Drawing.Size(784, 420);
+            this.chartMoisture.Size = new System.Drawing.Size(929, 420);
             this.chartMoisture.TabIndex = 7;
             this.chartMoisture.Text = "chartMoisture";
             // 
+            // Min
+            // 
+            this.Min.Location = new System.Drawing.Point(131, 36);
+            this.Min.Name = "Min";
+            this.Min.Size = new System.Drawing.Size(122, 33);
+            this.Min.TabIndex = 9;
+            this.Min.Text = "Уменьшить";
+            this.Min.UseVisualStyleBackColor = true;
+            this.Min.Click += new System.EventHandler(this.Min_Click);
+            // 
             // buttonExcel
             // 
-            this.buttonExcel.Location = new System.Drawing.Point(411, 3);
+            this.buttonExcel.Location = new System.Drawing.Point(258, 36);
             this.buttonExcel.Name = "buttonExcel";
-            this.buttonExcel.Size = new System.Drawing.Size(150, 27);
+            this.buttonExcel.Size = new System.Drawing.Size(150, 33);
             this.buttonExcel.TabIndex = 16;
             this.buttonExcel.Text = "ВЫГРУЗИТЬ";
             this.buttonExcel.UseVisualStyleBackColor = true;
             this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
             // 
+            // Max
+            // 
+            this.Max.Location = new System.Drawing.Point(3, 36);
+            this.Max.Name = "Max";
+            this.Max.Size = new System.Drawing.Size(122, 33);
+            this.Max.TabIndex = 8;
+            this.Max.Text = "Увеличить";
+            this.Max.UseVisualStyleBackColor = true;
+            this.Max.Click += new System.EventHandler(this.Max_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 36);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(546, 772);
+            this.dataGridView1.Size = new System.Drawing.Size(405, 730);
             this.dataGridView1.TabIndex = 15;
             // 
             // dateTimePicker1
@@ -452,23 +529,25 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker1.TabIndex = 13;
             this.dateTimePicker1.Value = new System.DateTime(2023, 9, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(209, 3);
+            this.dateTimePicker2.Location = new System.Drawing.Point(208, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker2.TabIndex = 14;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.groupBox7);
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.weather5);
+            this.tabPage2.Controls.Add(this.weather4);
+            this.tabPage2.Controls.Add(this.weather3);
+            this.tabPage2.Controls.Add(this.weather2);
             this.tabPage2.Controls.Add(this.gMapControl1);
             this.tabPage2.Controls.Add(this.SMPcity);
-            this.tabPage2.Controls.Add(this.weather_);
+            this.tabPage2.Controls.Add(this.weather1);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
@@ -478,25 +557,25 @@
             this.tabPage2.Text = "Погода";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // groupBox7
+            // weather5
             // 
-            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.weather5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox7.Controls.Add(this.time4);
-            this.groupBox7.Controls.Add(this.pres4);
-            this.groupBox7.Controls.Add(this.groupBox8);
-            this.groupBox7.Controls.Add(this.hum4);
-            this.groupBox7.Controls.Add(this.temp_4);
-            this.groupBox7.Controls.Add(this.weatherDescription4);
-            this.groupBox7.Controls.Add(this.weatherMain4);
-            this.groupBox7.Controls.Add(this.image_4);
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox7.Location = new System.Drawing.Point(1232, 483);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(300, 333);
-            this.groupBox7.TabIndex = 11;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Погода";
+            this.weather5.Controls.Add(this.time4);
+            this.weather5.Controls.Add(this.pres4);
+            this.weather5.Controls.Add(this.groupBox8);
+            this.weather5.Controls.Add(this.hum4);
+            this.weather5.Controls.Add(this.temp_4);
+            this.weather5.Controls.Add(this.weatherDescription4);
+            this.weather5.Controls.Add(this.weatherMain4);
+            this.weather5.Controls.Add(this.image_4);
+            this.weather5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weather5.Location = new System.Drawing.Point(1232, 483);
+            this.weather5.Name = "weather5";
+            this.weather5.Size = new System.Drawing.Size(300, 333);
+            this.weather5.TabIndex = 11;
+            this.weather5.TabStop = false;
+            this.weather5.Text = "Погода";
             // 
             // time4
             // 
@@ -589,25 +668,25 @@
             this.image_4.Size = new System.Drawing.Size(90, 90);
             this.image_4.TabIndex = 0;
             // 
-            // groupBox5
+            // weather4
             // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.weather4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.time3);
-            this.groupBox5.Controls.Add(this.pres3);
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.hum3);
-            this.groupBox5.Controls.Add(this.temp_3);
-            this.groupBox5.Controls.Add(this.weatherDescription3);
-            this.groupBox5.Controls.Add(this.weatherMain3);
-            this.groupBox5.Controls.Add(this.image_3);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox5.Location = new System.Drawing.Point(926, 483);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(300, 333);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Погода";
+            this.weather4.Controls.Add(this.time3);
+            this.weather4.Controls.Add(this.pres3);
+            this.weather4.Controls.Add(this.groupBox6);
+            this.weather4.Controls.Add(this.hum3);
+            this.weather4.Controls.Add(this.temp_3);
+            this.weather4.Controls.Add(this.weatherDescription3);
+            this.weather4.Controls.Add(this.weatherMain3);
+            this.weather4.Controls.Add(this.image_3);
+            this.weather4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weather4.Location = new System.Drawing.Point(926, 483);
+            this.weather4.Name = "weather4";
+            this.weather4.Size = new System.Drawing.Size(300, 333);
+            this.weather4.TabIndex = 10;
+            this.weather4.TabStop = false;
+            this.weather4.Text = "Погода";
             // 
             // time3
             // 
@@ -700,25 +779,25 @@
             this.image_3.Size = new System.Drawing.Size(90, 90);
             this.image_3.TabIndex = 0;
             // 
-            // groupBox3
+            // weather3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.weather3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.time2);
-            this.groupBox3.Controls.Add(this.pres2);
-            this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.hum2);
-            this.groupBox3.Controls.Add(this.temp_2);
-            this.groupBox3.Controls.Add(this.weatherDescription2);
-            this.groupBox3.Controls.Add(this.weatherMain2);
-            this.groupBox3.Controls.Add(this.image_2);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox3.Location = new System.Drawing.Point(620, 483);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(300, 333);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Погода";
+            this.weather3.Controls.Add(this.time2);
+            this.weather3.Controls.Add(this.pres2);
+            this.weather3.Controls.Add(this.groupBox4);
+            this.weather3.Controls.Add(this.hum2);
+            this.weather3.Controls.Add(this.temp_2);
+            this.weather3.Controls.Add(this.weatherDescription2);
+            this.weather3.Controls.Add(this.weatherMain2);
+            this.weather3.Controls.Add(this.image_2);
+            this.weather3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weather3.Location = new System.Drawing.Point(620, 483);
+            this.weather3.Name = "weather3";
+            this.weather3.Size = new System.Drawing.Size(300, 333);
+            this.weather3.TabIndex = 9;
+            this.weather3.TabStop = false;
+            this.weather3.Text = "Погода";
             // 
             // time2
             // 
@@ -811,25 +890,25 @@
             this.image_2.Size = new System.Drawing.Size(90, 90);
             this.image_2.TabIndex = 0;
             // 
-            // groupBox1
+            // weather2
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.weather2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.time1);
-            this.groupBox1.Controls.Add(this.pres1);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.hum1);
-            this.groupBox1.Controls.Add(this.temp_1);
-            this.groupBox1.Controls.Add(this.weatherDescription1);
-            this.groupBox1.Controls.Add(this.weatherMain1);
-            this.groupBox1.Controls.Add(this.image_1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(314, 483);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(300, 333);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Погода";
+            this.weather2.Controls.Add(this.time1);
+            this.weather2.Controls.Add(this.pres1);
+            this.weather2.Controls.Add(this.groupBox2);
+            this.weather2.Controls.Add(this.hum1);
+            this.weather2.Controls.Add(this.temp_1);
+            this.weather2.Controls.Add(this.weatherDescription1);
+            this.weather2.Controls.Add(this.weatherMain1);
+            this.weather2.Controls.Add(this.image_1);
+            this.weather2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weather2.Location = new System.Drawing.Point(314, 483);
+            this.weather2.Name = "weather2";
+            this.weather2.Size = new System.Drawing.Size(300, 333);
+            this.weather2.TabIndex = 8;
+            this.weather2.TabStop = false;
+            this.weather2.Text = "Погода";
             // 
             // time1
             // 
@@ -965,25 +1044,25 @@
             this.SMPcity.Size = new System.Drawing.Size(300, 479);
             this.SMPcity.TabIndex = 2;
             // 
-            // weather_
+            // weather1
             // 
-            this.weather_.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.weather1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.weather_.Controls.Add(this.pres);
-            this.weather_.Controls.Add(this.wind_);
-            this.weather_.Controls.Add(this.hum);
-            this.weather_.Controls.Add(this.temp_);
-            this.weather_.Controls.Add(this.time);
-            this.weather_.Controls.Add(this.weatherDescription);
-            this.weather_.Controls.Add(this.weatherMain);
-            this.weather_.Controls.Add(this.image_);
-            this.weather_.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.weather_.Location = new System.Drawing.Point(8, 483);
-            this.weather_.Name = "weather_";
-            this.weather_.Size = new System.Drawing.Size(300, 333);
-            this.weather_.TabIndex = 1;
-            this.weather_.TabStop = false;
-            this.weather_.Text = "Погода";
+            this.weather1.Controls.Add(this.pres);
+            this.weather1.Controls.Add(this.wind_);
+            this.weather1.Controls.Add(this.hum);
+            this.weather1.Controls.Add(this.temp_);
+            this.weather1.Controls.Add(this.time);
+            this.weather1.Controls.Add(this.weatherDescription);
+            this.weather1.Controls.Add(this.weatherMain);
+            this.weather1.Controls.Add(this.image_);
+            this.weather1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weather1.Location = new System.Drawing.Point(8, 483);
+            this.weather1.Name = "weather1";
+            this.weather1.Size = new System.Drawing.Size(300, 333);
+            this.weather1.TabIndex = 1;
+            this.weather1.TabStop = false;
+            this.weather1.Text = "Погода";
             // 
             // pres
             // 
@@ -1078,7 +1157,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.pictureBox1);
+            this.tabPage3.Controls.Add(this.tech);
+            this.tabPage3.Controls.Add(this.plan);
             this.tabPage3.Controls.Add(this.treeView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Name = "tabPage3";
@@ -1088,77 +1168,111 @@
             this.tabPage3.Text = "Техническое";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // tech
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(655, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(916, 805);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.tech.Controls.Add(this.to);
+            this.tech.Location = new System.Drawing.Point(373, 170);
+            this.tech.Name = "tech";
+            this.tech.Size = new System.Drawing.Size(281, 373);
+            this.tech.TabIndex = 15;
+            // 
+            // to
+            // 
+            this.to.AutoSize = true;
+            this.to.Location = new System.Drawing.Point(22, 45);
+            this.to.Name = "to";
+            this.to.Size = new System.Drawing.Size(48, 29);
+            this.to.TabIndex = 0;
+            this.to.Text = "ТО";
+            // 
+            // plan
+            // 
+            this.plan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.plan.Image = ((System.Drawing.Image)(resources.GetObject("plan.Image")));
+            this.plan.Location = new System.Drawing.Point(744, 3);
+            this.plan.Name = "plan";
+            this.plan.Size = new System.Drawing.Size(827, 805);
+            this.plan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.plan.TabIndex = 14;
+            this.plan.TabStop = false;
             // 
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
-            treeNode45.Name = "Узел8";
-            treeNode45.Text = "1";
-            treeNode46.Name = "Узел7";
-            treeNode46.Text = "Холод";
-            treeNode47.Name = "Узел11";
-            treeNode47.Text = "1";
-            treeNode48.Name = "Узел10";
-            treeNode48.Text = "Тепло";
-            treeNode49.Name = "Узел0";
-            treeNode49.Text = "Терморегистраторы";
-            treeNode50.Name = "Узел12";
-            treeNode50.Text = "1";
-            treeNode51.Name = "Узел6";
-            treeNode51.Text = "Холод";
-            treeNode52.Name = "Узел15";
-            treeNode52.Text = "1";
-            treeNode53.Name = "Узел14";
-            treeNode53.Text = "Тепло";
-            treeNode54.Name = "Узел1";
-            treeNode54.Text = "Отопление";
-            treeNode55.Name = "Узел18";
-            treeNode55.Text = "1";
-            treeNode56.Name = "Узел5";
-            treeNode56.Text = "Холод";
-            treeNode57.Name = "Узел17";
+            treeNode57.Name = "Узел8";
             treeNode57.Text = "1";
-            treeNode58.Name = "Узел16";
-            treeNode58.Text = "Тепло";
-            treeNode59.Name = "Узел2";
-            treeNode59.Text = "Кондиционер";
-            treeNode60.Name = "Узел20";
-            treeNode60.Text = "1";
-            treeNode61.Name = "Узел4";
-            treeNode61.Text = "Холод";
-            treeNode62.Name = "Узел21";
+            treeNode58.Name = "Узел7";
+            treeNode58.Text = "Холод";
+            treeNode59.Name = "Узел11";
+            treeNode59.Text = "1";
+            treeNode60.Name = "Узел10";
+            treeNode60.Text = "Тепло";
+            treeNode61.Name = "Узел0";
+            treeNode61.Text = "Терморегистраторы";
+            treeNode62.Name = "Узел12";
             treeNode62.Text = "1";
-            treeNode63.Name = "Узел19";
-            treeNode63.Text = "Тепло";
-            treeNode64.Name = "Узел3";
-            treeNode64.Text = "Вентиляция";
-            treeNode65.Name = "Узел23";
-            treeNode65.Text = "Узел23";
-            treeNode66.Name = "Узел22";
-            treeNode66.Text = "Двери";
+            treeNode63.Name = "Узел6";
+            treeNode63.Text = "Холод";
+            treeNode64.Name = "Узел15";
+            treeNode64.Text = "1";
+            treeNode65.Name = "Узел14";
+            treeNode65.Text = "Тепло";
+            treeNode66.Name = "Узел1";
+            treeNode66.Text = "Отопление";
+            treeNode67.Name = "Узел18";
+            treeNode67.Text = "1";
+            treeNode68.Name = "Узел5";
+            treeNode68.Text = "Холод";
+            treeNode69.Name = "Узел17";
+            treeNode69.Text = "1";
+            treeNode70.Name = "Узел16";
+            treeNode70.Text = "Тепло";
+            treeNode71.Name = "Узел2";
+            treeNode71.Text = "Кондиционер";
+            treeNode72.Name = "Узел20";
+            treeNode72.Text = "1";
+            treeNode73.Name = "Узел4";
+            treeNode73.Text = "Холод";
+            treeNode74.Name = "Узел21";
+            treeNode74.Text = "1";
+            treeNode75.Name = "Узел19";
+            treeNode75.Text = "Тепло";
+            treeNode76.Name = "Узел3";
+            treeNode76.Text = "Вентиляция";
+            treeNode77.Name = "Узел23";
+            treeNode77.Text = "Тёплые";
+            treeNode78.Name = "Узел4";
+            treeNode78.Text = "Выходы";
+            treeNode79.Name = "Узел5";
+            treeNode79.Text = "Запасные";
+            treeNode80.Name = "Узел22";
+            treeNode80.Text = "Двери";
+            treeNode81.Name = "Узел0";
+            treeNode81.Text = "Сигнализация";
+            treeNode82.Name = "Узел1";
+            treeNode82.Text = "Дым";
+            treeNode83.Name = "Узел2";
+            treeNode83.Text = "Генератор";
+            treeNode84.Name = "Узел3";
+            treeNode84.Text = "Техника";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode49,
-            treeNode54,
-            treeNode59,
-            treeNode64,
-            treeNode66});
+            treeNode61,
+            treeNode66,
+            treeNode71,
+            treeNode76,
+            treeNode80,
+            treeNode81,
+            treeNode82,
+            treeNode83,
+            treeNode84});
             this.treeView1.Size = new System.Drawing.Size(302, 805);
             this.treeView1.TabIndex = 13;
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.account);
             this.tabPage4.Location = new System.Drawing.Point(4, 38);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1574, 811);
@@ -1179,6 +1293,144 @@
             // tableColdTableAdapter
             // 
             this.tableColdTableAdapter.ClearBeforeFill = true;
+            // 
+            // account
+            // 
+            this.account.Controls.Add(this.label17);
+            this.account.Controls.Add(this.label16);
+            this.account.Controls.Add(this.label15);
+            this.account.Controls.Add(this.label14);
+            this.account.Controls.Add(this.label13);
+            this.account.Controls.Add(this.label12);
+            this.account.Controls.Add(this.label11);
+            this.account.Controls.Add(this.label10);
+            this.account.Controls.Add(this.label9);
+            this.account.Controls.Add(this.label8);
+            this.account.Controls.Add(this.label7);
+            this.account.Controls.Add(this.label6);
+            this.account.Controls.Add(this.label3);
+            this.account.Dock = System.Windows.Forms.DockStyle.Left;
+            this.account.Location = new System.Drawing.Point(0, 0);
+            this.account.Name = "account";
+            this.account.Size = new System.Drawing.Size(484, 811);
+            this.account.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(69, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 29);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "label3";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(69, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 29);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(69, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 29);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(69, 158);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 29);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(69, 187);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 29);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "label9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(69, 216);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 29);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "label10";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(69, 245);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(92, 29);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "label11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(69, 274);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 29);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "label12";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(69, 303);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 29);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "label13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(69, 332);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(92, 29);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "label14";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(69, 361);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(92, 29);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "label15";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(69, 390);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(92, 29);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "label16";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(69, 419);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 29);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "label17";
             // 
             // Climate
             // 
@@ -1201,8 +1453,8 @@
             this.splitContainer5.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
             this.splitContainer5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelWarning.ResumeLayout(false);
+            this.panelWarning.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -1213,31 +1465,35 @@
             this.splitContainer4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.weather5.ResumeLayout(false);
+            this.weather5.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.weather4.ResumeLayout(false);
+            this.weather4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.weather3.ResumeLayout(false);
+            this.weather3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.weather2.ResumeLayout(false);
+            this.weather2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.weather_.ResumeLayout(false);
-            this.weather_.PerformLayout();
+            this.weather1.ResumeLayout(false);
+            this.weather1.PerformLayout();
             this.wind_.ResumeLayout(false);
             this.wind_.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tech.ResumeLayout(false);
+            this.tech.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.plan)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableColdBindingSource)).EndInit();
+            this.account.ResumeLayout(false);
+            this.account.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1253,12 +1509,12 @@
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.ListBox SMPcity;
         private System.Windows.Forms.Button buttonCold;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelWarning;
+        private System.Windows.Forms.Label normMoist;
         private System.Windows.Forms.Label Warning2;
         private System.Windows.Forms.Label Warning1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label normTemp;
+        private System.Windows.Forms.Label warning;
         private System.Windows.Forms.Button buttonWarm;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.SplitContainer splitContainer2;
@@ -1272,7 +1528,7 @@
         private System.Windows.Forms.Button buttonExcel;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Label time;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox weather5;
         private System.Windows.Forms.Label pres4;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label deg_4;
@@ -1282,7 +1538,7 @@
         private System.Windows.Forms.Label weatherDescription4;
         private System.Windows.Forms.Label weatherMain4;
         private System.Windows.Forms.Panel image_4;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox weather4;
         private System.Windows.Forms.Label pres3;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label deg_3;
@@ -1292,7 +1548,7 @@
         private System.Windows.Forms.Label weatherDescription3;
         private System.Windows.Forms.Label weatherMain3;
         private System.Windows.Forms.Panel image_3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox weather3;
         private System.Windows.Forms.Label pres2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label deg_2;
@@ -1302,7 +1558,7 @@
         private System.Windows.Forms.Label weatherDescription2;
         private System.Windows.Forms.Label weatherMain2;
         private System.Windows.Forms.Panel image_2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox weather2;
         private System.Windows.Forms.Label pres1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label deg_1;
@@ -1312,7 +1568,7 @@
         private System.Windows.Forms.Label weatherDescription1;
         private System.Windows.Forms.Label weatherMain1;
         private System.Windows.Forms.Panel image_1;
-        private System.Windows.Forms.GroupBox weather_;
+        private System.Windows.Forms.GroupBox weather1;
         private System.Windows.Forms.Label pres;
         private System.Windows.Forms.GroupBox wind_;
         private System.Windows.Forms.Label deg_;
@@ -1328,8 +1584,28 @@
         private System.Windows.Forms.Label time2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.SplitContainer splitContainer5;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.PictureBox plan;
+        private System.Windows.Forms.Label WarningMoist;
+        private System.Windows.Forms.Label WarningTemp;
+        private System.Windows.Forms.Button Min;
+        private System.Windows.Forms.Button Max;
+        private System.Windows.Forms.Panel tech;
+        private System.Windows.Forms.Label to;
+        private System.Windows.Forms.Panel account;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
     }
 }
 
