@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
 {
     public partial class Login : Form
     {
+        private int userIDtemp = 0;
         public Login()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace WindowsFormsApp1
 
             if (AuthorizeUser(login, password))
             {
-                Climate mainForm = new Climate();
+                Climate mainForm = new Climate(userIDtemp);
                 mainForm.Show();
                 this.Hide();
             }
@@ -57,10 +58,9 @@ namespace WindowsFormsApp1
         {
             bool isAuthorized = false;
 
-            var dbQeury = new DBquery();
             var getHash = new Hashing();
 
-            using (SqlConnection con = new SqlConnection(dbQeury.StringCon()))
+            using (SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-9ITJ4U4\SQLEXPRESS;Initial Catalog=Climate;Integrated Security=True;Connect Timeout=30;Encrypt=False;"))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand($"SELECT * FROM users WHERE login ='{login}' and password = '{getHash.Hash(password)}'", con))
@@ -71,6 +71,7 @@ namespace WindowsFormsApp1
                         {
                             if (reader["password"].ToString() == getHash.Hash(password) && reader["login"].ToString() == login)
                             {
+                                userIDtemp = Convert.ToInt32(reader["id"]);
                                 isAuthorized = true;
                                 MessageBox.Show("Вход успешно выполнен!", "Успех");
                             }
@@ -80,11 +81,15 @@ namespace WindowsFormsApp1
             }
             return isAuthorized;
         }
-        private void label2_Click(object sender, EventArgs e)
+        private void reg_Click(object sender, EventArgs e)
         {
             Registration Reg = new Registration();
             Reg.Show();
             this.Hide();
+        }
+        private void passMail_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

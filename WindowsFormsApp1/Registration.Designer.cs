@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.enter = new System.Windows.Forms.Label();
             this.boxShowPassword = new System.Windows.Forms.CheckBox();
             this.guna2TextBox1 = new System.Windows.Forms.TextBox();
             this.guna2TextBox2 = new System.Windows.Forms.TextBox();
@@ -39,16 +39,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // enter
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(270, 270);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Войти";
-            this.label1.Click += new System.EventHandler(this.label2_Click);
+            this.enter.AutoSize = true;
+            this.enter.Location = new System.Drawing.Point(270, 270);
+            this.enter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.enter.Name = "enter";
+            this.enter.Size = new System.Drawing.Size(61, 20);
+            this.enter.TabIndex = 0;
+            this.enter.Text = "Войти";
+            this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
             // boxShowPassword
             // 
@@ -142,9 +142,11 @@
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.boxShowPassword);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.enter);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(600, 400);
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Registration";
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.Registration_Load);
@@ -155,7 +157,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label enter;
         private System.Windows.Forms.CheckBox boxShowPassword;
         private System.Windows.Forms.TextBox guna2TextBox1;
         private System.Windows.Forms.TextBox guna2TextBox2;

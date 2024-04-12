@@ -34,7 +34,8 @@
             this.passwordTextBoxA = new System.Windows.Forms.TextBox();
             this.loginTextBoxA = new System.Windows.Forms.TextBox();
             this.boxShowPassword = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.reg = new System.Windows.Forms.Label();
+            this.passMail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -97,31 +98,44 @@
             this.boxShowPassword.UseVisualStyleBackColor = true;
             this.boxShowPassword.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label1
+            // reg
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 243);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Регистрация";
-            this.label1.Click += new System.EventHandler(this.label2_Click);
+            this.reg.AutoSize = true;
+            this.reg.Location = new System.Drawing.Point(243, 243);
+            this.reg.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.reg.Name = "reg";
+            this.reg.Size = new System.Drawing.Size(117, 20);
+            this.reg.TabIndex = 9;
+            this.reg.Text = "Регистрация";
+            this.reg.Click += new System.EventHandler(this.reg_Click);
+            // 
+            // passMail
+            // 
+            this.passMail.AutoSize = true;
+            this.passMail.Location = new System.Drawing.Point(226, 263);
+            this.passMail.Name = "passMail";
+            this.passMail.Size = new System.Drawing.Size(147, 20);
+            this.passMail.TabIndex = 18;
+            this.passMail.Text = "Забыли пароль?";
+            this.passMail.Click += new System.EventHandler(this.passMail_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 353);
+            this.Controls.Add(this.passMail);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.passwordTextBoxA);
             this.Controls.Add(this.loginTextBoxA);
             this.Controls.Add(this.boxShowPassword);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.reg);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(600, 400);
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -138,6 +152,7 @@
         private System.Windows.Forms.TextBox passwordTextBoxA;
         private System.Windows.Forms.TextBox loginTextBoxA;
         private System.Windows.Forms.CheckBox boxShowPassword;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label reg;
+        private System.Windows.Forms.Label passMail;
     }
 }

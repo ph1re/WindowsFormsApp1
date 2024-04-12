@@ -17,12 +17,21 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Controls;
 using ClosedXML.Excel;
+using MySqlX.XDevAPI;
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Windows.Controls.Primitives;
+using myFont = System.Drawing.Font;
+using Org.BouncyCastle.Asn1.IsisMtt.Ocsp;
 
 namespace WindowsFormsApp1
 {
     public partial class Climate : Form
     {
-        private SqlConnection SqlCon = new SqlConnection(@"Data Source=DESKTOP-9ITJ4U4\SQLEXPRESS;Initial Catalog=Climate;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+        private int userIDmain = 0;
+        private List<int> workersInt = new List<int>();
+        private List <string> workersStr = new List<string>();
+        private DateTime lastEntryUser = DateTime.Now;
+        private string conStr = "Data Source=DESKTOP-9ITJ4U4\\SQLEXPRESS;Initial Catalog=Climate;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
         private SqlDataAdapter dataAdapterWarm = null;
         private DataSet dataSetWarm = null;
         private DataTable tableWarm = null;
@@ -32,10 +41,14 @@ namespace WindowsFormsApp1
         private SqlDataAdapter dataAdapterCity = null;
         private DataSet dataSetCity = null;
         private DataTable tableCity = null;
+        private SqlDataAdapter dataAdapterUsers = null;
+        private DataSet dataSetUsers = null;
+        private DataTable tableUsers = null;
         private bool? tableCheck = null;
-        public Climate()
+        public Climate(int userID)
         {
             InitializeComponent();
+            userIDmain = userID;
             string[] SMPcity_ = { "Москва", "Санкт-Петербург", "Мурманск", "Архангельск", "Нарьян-мар", "Диксон", "Дудинка", "Хатанга", "Тикси", "Певек", "Анадырь", "Владивосток" };
             SMPcity.Items.AddRange(SMPcity_);
             SMPcity.SelectedIndexChanged += listBox1_SelectedIndexChanged;
@@ -43,15 +56,65 @@ namespace WindowsFormsApp1
             chartTemp.LegendLocation = LegendLocation.Bottom;
             chartMoisture.LegendLocation = LegendLocation.Bottom;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            city.Items.AddRange(SMPcity_);
+            SqlConnection SqlCon_ = new SqlConnection(conStr);
+            SqlCon_.Open();
+            SqlDataAdapter sdaUser_ = new SqlDataAdapter($"UPDATE usersInfo SET lastEntry = '{lastEntryUser}' WHERE userID = '{userIDmain}';", SqlCon_);
+            sdaUser_.SelectCommand.ExecuteNonQuery();
         }
         private async void Form1_Load(object sender, EventArgs e)
         {
-            // TABLE
-            dataAdapterWarm = new SqlDataAdapter("SELECT * FROM warm", SqlCon);
-            dataSetWarm = new DataSet();
-            dataAdapterCold = new SqlDataAdapter("SELECT * FROM cold", SqlCon);
-            dataSetCold = new DataSet();
-
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                try
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open();
+                        string query = $"SELECT * FROM usersInfo ";
+                        using (SqlCommand com = new SqlCommand(query, con))
+                        {
+                            using (SqlDataReader reader = com.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    if(!reader.IsDBNull(1))
+                                    {
+                                        workersStr.Add(reader.GetString(2));
+                                        workersInt.Add(reader.GetInt32(13));
+                                        if (userIDmain == reader.GetInt32(13))
+                                        {
+                                            givenName.Text = reader.GetString(1);
+                                            surname.Text = reader.GetString(2);
+                                            patronymic.Text = reader.GetString(3);
+                                            gender.Text = reader.GetString(4);
+                                            birthdate.Value = reader.GetDateTime(5);
+                                            age.Text = (reader.GetInt32(6)).ToString();
+                                            post.Text = reader.GetString(7);
+                                            phone.Text = reader.GetString(8);
+                                            email.Text = reader.GetString(9);
+                                            city.Text = reader.GetString(10);
+                                            photo.ImageLocation = reader.GetString(11);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Обработка ошибки подключения к базе данных
+                }
+                finally
+                {
+                    if (con.State == ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+            }
+            workers.Items.AddRange(workersStr.ToArray<object>());
             // API
             WebRequest request = WebRequest.Create("https://api.openweathermap.org/data/2.5/forecast?lat=59,9387&lon=30,3149&units=metric&lang=ru&appid=07c6b441a2e916cf7c54a17a93052493");
             request.Method = "POST";
@@ -138,7 +201,8 @@ namespace WindowsFormsApp1
         private async void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // TABLE
-            dataAdapterCity = new SqlDataAdapter("SELECT * FROM cities", SqlCon);
+            SqlConnection Sqlcon = new SqlConnection(conStr);
+            dataAdapterCity = new SqlDataAdapter("SELECT * FROM cities", Sqlcon);
             dataSetCity = new DataSet();
             if (dataSetCity.Tables["cities"] != null) dataSetCity.Tables["cities"].Clear();
             dataAdapterCity.Fill(dataSetCity, "cities");
@@ -237,6 +301,7 @@ namespace WindowsFormsApp1
         private void buttonWarm_Click(object sender, EventArgs e)
         {
             tableCheck = true;
+            SqlConnection SqlCon = new SqlConnection(conStr);
             dataAdapterWarm = new SqlDataAdapter($"SELECT * FROM warm WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
             dataSetWarm = new DataSet();
             if (dataSetWarm.Tables["tableWarm"] != null) dataSetWarm.Tables["tableWarm"].Clear();
@@ -293,6 +358,7 @@ namespace WindowsFormsApp1
         private void buttonCold_Click(object sender, EventArgs e)
         {
             tableCheck = false;
+            SqlConnection SqlCon = new SqlConnection(conStr);
             dataAdapterCold = new SqlDataAdapter($"SELECT * FROM Cold WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
             dataSetCold = new DataSet();
             if (dataSetCold.Tables["tableCold"] != null) dataSetCold.Tables["tableCold"].Clear();
@@ -372,10 +438,11 @@ namespace WindowsFormsApp1
         }
         private void Max_Click(object sender, EventArgs e)
         {
-            dataGridView1.DefaultCellStyle.Font = new Font("Calibri", dataGridView1.DefaultCellStyle.Font.Size + 1, FontStyle.Regular);
+            dataGridView1.DefaultCellStyle.Font = new myFont("Calibri", dataGridView1.DefaultCellStyle.Font.Size + 1, FontStyle.Regular);
             dataGridView1.RowTemplate.Height += 9;
             if (tableCheck == true)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterWarm = new SqlDataAdapter($"SELECT * FROM warm WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetWarm = new DataSet();
                 if (dataSetWarm.Tables["tableWarm"] != null) dataSetWarm.Tables["tableWarm"].Clear();
@@ -385,6 +452,7 @@ namespace WindowsFormsApp1
             }
             else if (tableCheck == false)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterCold = new SqlDataAdapter($"SELECT * FROM Cold WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetCold = new DataSet();
                 if (dataSetCold.Tables["tableCold"] != null) dataSetCold.Tables["tableCold"].Clear();
@@ -395,10 +463,11 @@ namespace WindowsFormsApp1
         }
         private void Min_Click(object sender, EventArgs e)
         {
-            dataGridView1.DefaultCellStyle.Font = new Font("Calibri", dataGridView1.DefaultCellStyle.Font.Size - 1, FontStyle.Regular);
+            dataGridView1.DefaultCellStyle.Font = new myFont("Calibri", dataGridView1.DefaultCellStyle.Font.Size - 1, FontStyle.Regular);
             dataGridView1.RowTemplate.Height -= 9;
             if (tableCheck == true)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterWarm = new SqlDataAdapter($"SELECT * FROM warm WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetWarm = new DataSet();
                 if (dataSetWarm.Tables["tableWarm"] != null) dataSetWarm.Tables["tableWarm"].Clear();
@@ -408,6 +477,7 @@ namespace WindowsFormsApp1
             }
             else if (tableCheck == false)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterCold = new SqlDataAdapter($"SELECT * FROM Cold WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetCold = new DataSet();
                 if (dataSetCold.Tables["tableCold"] != null) dataSetCold.Tables["tableCold"].Clear();
@@ -420,6 +490,7 @@ namespace WindowsFormsApp1
         {
             if (tableCheck == true)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterWarm = new SqlDataAdapter($"SELECT * FROM warm WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetWarm = new DataSet();
                 if (dataSetWarm.Tables["tableWarm"] != null) dataSetWarm.Tables["tableWarm"].Clear();
@@ -475,6 +546,7 @@ namespace WindowsFormsApp1
             }
             else if (tableCheck == false)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterCold = new SqlDataAdapter($"SELECT * FROM Cold WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetCold = new DataSet();
                 if (dataSetCold.Tables["tableCold"] != null) dataSetCold.Tables["tableCold"].Clear();
@@ -533,6 +605,7 @@ namespace WindowsFormsApp1
         {
             if (tableCheck == true)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterWarm = new SqlDataAdapter($"SELECT * FROM warm WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetWarm = new DataSet();
                 if (dataSetWarm.Tables["tableWarm"] != null) dataSetWarm.Tables["tableWarm"].Clear();
@@ -588,6 +661,7 @@ namespace WindowsFormsApp1
             }
             else if (tableCheck == false)
             {
+                SqlConnection SqlCon = new SqlConnection(conStr);
                 dataAdapterCold = new SqlDataAdapter($"SELECT * FROM Cold WHERE date BETWEEN '{dateTimePicker1.Value}' AND '{dateTimePicker2.Value}'", SqlCon);
                 dataSetCold = new DataSet();
                 if (dataSetCold.Tables["tableCold"] != null) dataSetCold.Tables["tableCold"].Clear();
@@ -640,6 +714,128 @@ namespace WindowsFormsApp1
                 seriesMoist.Add(lineMoist);
                 chartMoisture.Series = seriesMoist;
                 chartMoisture.AxisY.Clear();
+            }
+        }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            age.Text = (Convert.ToInt32(DateTime.Now.ToString("yyyy")) - Convert.ToInt32(birthdate.Value.ToString("yyyy"))).ToString();
+            SqlConnection SqlCon = new SqlConnection(conStr);
+            SqlCon.Open();
+            SqlDataAdapter sdaUser = new SqlDataAdapter($"UPDATE usersInfo SET givenName = '{givenName.Text}', surname = '{surname.Text}', patronymic = '{patronymic.Text}',gender = '{gender.Text}', birthdate = '{birthdate.Value}',age = '{age.Text}',post = '{post.Text}',phone = '{phone.Text}', email = '{email.Text}',city = '{city.Text}',photo = '{photo.ImageLocation}',lastEntry = '{lastEntryUser}' WHERE userID = '{userIDmain}';", SqlCon);
+            sdaUser.SelectCommand.ExecuteNonQuery();
+        }
+        private void texnON_Click(object sender, EventArgs e)
+        {
+            givenName.Enabled = true;
+            surname.Enabled = true;
+            patronymic.Enabled = true;
+            gender.Enabled = true;
+            birthdate.Enabled = true;
+            phone.Enabled = true;
+            email.Enabled = true;
+            city.Enabled = true;
+            photo.Enabled = true;
+        }
+        private void textOFF_Click(object sender, EventArgs e)
+        {
+            givenName.Enabled = false;
+            surname.Enabled = false;
+            patronymic.Enabled = false;
+            gender.Enabled = false;
+            birthdate.Enabled = false;
+            post.Enabled = false;
+            phone.Enabled = false;
+            email.Enabled = false;
+            city.Enabled = false;
+            photo.Enabled = false;
+        }
+
+        private void photo_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+            photo.ImageLocation = openFileDialog1.FileName;
+        }
+
+        private void workers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                try
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open();
+                        string query = $"SELECT * FROM usersInfo WHERE userID = {workersInt[workers.SelectedIndex]}";
+                        using (SqlCommand com = new SqlCommand(query, con))
+                        {
+                            using (SqlDataReader reader = com.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    givenName_.Text = reader.GetString(1);
+                                    surname_.Text = reader.GetString(2);
+                                    patronymic_.Text = reader.GetString(3);
+                                    gender_.Text = reader.GetString(4);
+                                    birthdate_.Text = reader.GetDateTime(5).ToString("d");
+                                    age_.Text = reader.GetInt32(6).ToString();
+                                    post_.Text = reader.GetString(7);
+                                    phone_.Text = reader.GetString(8);
+                                    email_.Text = reader.GetString(9);
+                                    city_.Text = reader.GetString(10);
+                                    photo_.ImageLocation = reader.GetString(11);
+                                    lastEntry_.Text = reader.GetDateTime(12).ToString();
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Обработка ошибки подключения к базе данных
+                }
+                finally
+                {
+                    if (con.State == ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+            }
+            userList.Visible = true;
+        }
+
+        private void quit_Click(object sender, EventArgs e)
+        {
+            Login Log = new Login();
+            Log.Show();
+            this.Hide();
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            tech.Visible = true;
+        }
+
+        public IEnumerable<TreeNode> GetNodes(TreeNodeCollection nodes)
+{
+            var stack = new Stack<TreeNode>();
+
+            foreach (TreeNode node in nodes)
+            {
+                stack.Push(node);
+            }
+
+            while (stack.Count > 0)
+            {
+                var current = stack.Pop();
+                yield return current;
+
+                foreach (TreeNode child in current.Nodes)
+                {
+                    stack.Push(child);
+                }
             }
         }
     }
