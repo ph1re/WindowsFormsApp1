@@ -29,55 +29,63 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Climate));
-            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode142 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode141});
-            System.Windows.Forms.TreeNode treeNode143 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode144 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode143});
-            System.Windows.Forms.TreeNode treeNode145 = new System.Windows.Forms.TreeNode("Терморегистраторы", new System.Windows.Forms.TreeNode[] {
-            treeNode142,
-            treeNode144});
-            System.Windows.Forms.TreeNode treeNode146 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode147 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode146});
-            System.Windows.Forms.TreeNode treeNode148 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode149 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode148});
-            System.Windows.Forms.TreeNode treeNode150 = new System.Windows.Forms.TreeNode("Отопление", new System.Windows.Forms.TreeNode[] {
-            treeNode147,
-            treeNode149});
-            System.Windows.Forms.TreeNode treeNode151 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode152 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode151});
-            System.Windows.Forms.TreeNode treeNode153 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode154 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode153});
-            System.Windows.Forms.TreeNode treeNode155 = new System.Windows.Forms.TreeNode("Кондиционер", new System.Windows.Forms.TreeNode[] {
-            treeNode152,
-            treeNode154});
-            System.Windows.Forms.TreeNode treeNode156 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode157 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
-            treeNode156});
-            System.Windows.Forms.TreeNode treeNode158 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode159 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
-            treeNode158});
-            System.Windows.Forms.TreeNode treeNode160 = new System.Windows.Forms.TreeNode("Вентиляция", new System.Windows.Forms.TreeNode[] {
-            treeNode157,
-            treeNode159});
-            System.Windows.Forms.TreeNode treeNode161 = new System.Windows.Forms.TreeNode("Тёплые");
-            System.Windows.Forms.TreeNode treeNode162 = new System.Windows.Forms.TreeNode("Выходы");
-            System.Windows.Forms.TreeNode treeNode163 = new System.Windows.Forms.TreeNode("Запасные");
-            System.Windows.Forms.TreeNode treeNode164 = new System.Windows.Forms.TreeNode("Двери", new System.Windows.Forms.TreeNode[] {
-            treeNode161,
-            treeNode162,
-            treeNode163});
-            System.Windows.Forms.TreeNode treeNode165 = new System.Windows.Forms.TreeNode("Сигнализация");
-            System.Windows.Forms.TreeNode treeNode166 = new System.Windows.Forms.TreeNode("Дым");
-            System.Windows.Forms.TreeNode treeNode167 = new System.Windows.Forms.TreeNode("Генератор");
-            System.Windows.Forms.TreeNode treeNode168 = new System.Windows.Forms.TreeNode("Техника");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode1});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Терморегистраторы", new System.Windows.Forms.TreeNode[] {
+            treeNode2,
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Отопление", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode9});
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode13});
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Кондиционер", new System.Windows.Forms.TreeNode[] {
+            treeNode12,
+            treeNode14});
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Холод", new System.Windows.Forms.TreeNode[] {
+            treeNode16});
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Тепло", new System.Windows.Forms.TreeNode[] {
+            treeNode18});
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Вентиляция", new System.Windows.Forms.TreeNode[] {
+            treeNode17,
+            treeNode19});
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Тёплые");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Выходы");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Запасные");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Двери", new System.Windows.Forms.TreeNode[] {
+            treeNode21,
+            treeNode22,
+            treeNode23});
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Узел0");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Сигнализация", new System.Windows.Forms.TreeNode[] {
+            treeNode25});
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Узел1");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Дым", new System.Windows.Forms.TreeNode[] {
+            treeNode27});
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Узел2");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Генератор", new System.Windows.Forms.TreeNode[] {
+            treeNode29});
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Узел3");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Техника", new System.Windows.Forms.TreeNode[] {
+            treeNode31});
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -191,6 +199,7 @@
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.photo_ = new System.Windows.Forms.PictureBox();
             this.account = new System.Windows.Forms.Panel();
+            this.quit = new System.Windows.Forms.Button();
             this.textOFF = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.givenName = new System.Windows.Forms.TextBox();
@@ -219,13 +228,20 @@
             this.tableColdBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableColdTableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.tableColdTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.quit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.details = new System.Windows.Forms.Label();
+            this.company = new System.Windows.Forms.Label();
+            this.postTO = new System.Windows.Forms.Label();
+            this.fio = new System.Windows.Forms.Label();
+            this.dateNext = new System.Windows.Forms.Label();
+            this.datePrev = new System.Windows.Forms.Label();
+            this.comment = new System.Windows.Forms.Label();
+            this.details_ = new System.Windows.Forms.TextBox();
+            this.company_ = new System.Windows.Forms.TextBox();
+            this.postTO_ = new System.Windows.Forms.TextBox();
+            this.fio_ = new System.Windows.Forms.TextBox();
+            this.comment_ = new System.Windows.Forms.TextBox();
+            this.datePrev_ = new System.Windows.Forms.DateTimePicker();
+            this.dateNext_ = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -470,7 +486,7 @@
             this.monthCalendar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.monthCalendar.CalendarDimensions = new System.Drawing.Size(1, 2);
             this.monthCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.monthCalendar.Location = new System.Drawing.Point(6, -9);
+            this.monthCalendar.Location = new System.Drawing.Point(6, -12);
             this.monthCalendar.Name = "monthCalendar";
             this.monthCalendar.TabIndex = 0;
             // 
@@ -521,6 +537,7 @@
             this.chartTemp.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.chartTemp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chartTemp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.chartTemp.Location = new System.Drawing.Point(0, 0);
             this.chartTemp.Name = "chartTemp";
             this.chartTemp.Size = new System.Drawing.Size(929, 375);
@@ -572,8 +589,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -583,7 +600,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(357, 730);
+            this.dataGridView1.Size = new System.Drawing.Size(351, 730);
             this.dataGridView1.TabIndex = 15;
             // 
             // dateTimePicker1
@@ -1235,12 +1252,20 @@
             // tech
             // 
             this.tech.BackColor = System.Drawing.Color.Gainsboro;
-            this.tech.Controls.Add(this.label6);
-            this.tech.Controls.Add(this.label5);
-            this.tech.Controls.Add(this.label4);
-            this.tech.Controls.Add(this.label3);
-            this.tech.Controls.Add(this.label2);
-            this.tech.Controls.Add(this.label1);
+            this.tech.Controls.Add(this.dateNext_);
+            this.tech.Controls.Add(this.datePrev_);
+            this.tech.Controls.Add(this.comment_);
+            this.tech.Controls.Add(this.fio_);
+            this.tech.Controls.Add(this.postTO_);
+            this.tech.Controls.Add(this.company_);
+            this.tech.Controls.Add(this.details_);
+            this.tech.Controls.Add(this.comment);
+            this.tech.Controls.Add(this.details);
+            this.tech.Controls.Add(this.company);
+            this.tech.Controls.Add(this.postTO);
+            this.tech.Controls.Add(this.fio);
+            this.tech.Controls.Add(this.dateNext);
+            this.tech.Controls.Add(this.datePrev);
             this.tech.Controls.Add(this.to);
             this.tech.Dock = System.Windows.Forms.DockStyle.Left;
             this.tech.Location = new System.Drawing.Point(305, 3);
@@ -1252,11 +1277,12 @@
             // to
             // 
             this.to.AutoSize = true;
-            this.to.Location = new System.Drawing.Point(17, 15);
+            this.to.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.to.Location = new System.Drawing.Point(3, 0);
             this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(48, 29);
+            this.to.Size = new System.Drawing.Size(331, 29);
             this.to.TabIndex = 0;
-            this.to.Text = "ТО";
+            this.to.Text = "Техническое обслуживание";
             // 
             // plan
             // 
@@ -1274,72 +1300,80 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
-            treeNode141.Name = "Узел8";
-            treeNode141.Text = "1";
-            treeNode142.Name = "Узел7";
-            treeNode142.Text = "Холод";
-            treeNode143.Name = "Узел11";
-            treeNode143.Text = "1";
-            treeNode144.Name = "Узел10";
-            treeNode144.Text = "Тепло";
-            treeNode145.Name = "Узел0";
-            treeNode145.Text = "Терморегистраторы";
-            treeNode146.Name = "Узел12";
-            treeNode146.Text = "1";
-            treeNode147.Name = "Узел6";
-            treeNode147.Text = "Холод";
-            treeNode148.Name = "Узел15";
-            treeNode148.Text = "1";
-            treeNode149.Name = "Узел14";
-            treeNode149.Text = "Тепло";
-            treeNode150.Name = "Узел1";
-            treeNode150.Text = "Отопление";
-            treeNode151.Name = "Узел18";
-            treeNode151.Text = "1";
-            treeNode152.Name = "Узел5";
-            treeNode152.Text = "Холод";
-            treeNode153.Name = "Узел17";
-            treeNode153.Text = "1";
-            treeNode154.Name = "Узел16";
-            treeNode154.Text = "Тепло";
-            treeNode155.Name = "Узел2";
-            treeNode155.Text = "Кондиционер";
-            treeNode156.Name = "Узел20";
-            treeNode156.Text = "1";
-            treeNode157.Name = "Узел4";
-            treeNode157.Text = "Холод";
-            treeNode158.Name = "Узел21";
-            treeNode158.Text = "1";
-            treeNode159.Name = "Узел19";
-            treeNode159.Text = "Тепло";
-            treeNode160.Name = "Узел3";
-            treeNode160.Text = "Вентиляция";
-            treeNode161.Name = "Узел23";
-            treeNode161.Text = "Тёплые";
-            treeNode162.Name = "Узел4";
-            treeNode162.Text = "Выходы";
-            treeNode163.Name = "Узел5";
-            treeNode163.Text = "Запасные";
-            treeNode164.Name = "Узел22";
-            treeNode164.Text = "Двери";
-            treeNode165.Name = "Узел0";
-            treeNode165.Text = "Сигнализация";
-            treeNode166.Name = "Узел1";
-            treeNode166.Text = "Дым";
-            treeNode167.Name = "Узел2";
-            treeNode167.Text = "Генератор";
-            treeNode168.Name = "Узел3";
-            treeNode168.Text = "Техника";
+            treeNode1.Name = "Узел8";
+            treeNode1.Text = "1";
+            treeNode2.Name = "Узел7";
+            treeNode2.Text = "Холод";
+            treeNode3.Name = "Узел11";
+            treeNode3.Text = "1";
+            treeNode4.Name = "Узел10";
+            treeNode4.Text = "Тепло";
+            treeNode5.Name = "Узел0";
+            treeNode5.Text = "Терморегистраторы";
+            treeNode6.Name = "Узел12";
+            treeNode6.Text = "1";
+            treeNode7.Name = "Узел6";
+            treeNode7.Text = "Холод";
+            treeNode8.Name = "Узел15";
+            treeNode8.Text = "1";
+            treeNode9.Name = "Узел14";
+            treeNode9.Text = "Тепло";
+            treeNode10.Name = "Узел1";
+            treeNode10.Text = "Отопление";
+            treeNode11.Name = "Узел18";
+            treeNode11.Text = "1";
+            treeNode12.Name = "Узел5";
+            treeNode12.Text = "Холод";
+            treeNode13.Name = "Узел17";
+            treeNode13.Text = "1";
+            treeNode14.Name = "Узел16";
+            treeNode14.Text = "Тепло";
+            treeNode15.Name = "Узел2";
+            treeNode15.Text = "Кондиционер";
+            treeNode16.Name = "Узел20";
+            treeNode16.Text = "1";
+            treeNode17.Name = "Узел4";
+            treeNode17.Text = "Холод";
+            treeNode18.Name = "Узел21";
+            treeNode18.Text = "1";
+            treeNode19.Name = "Узел19";
+            treeNode19.Text = "Тепло";
+            treeNode20.Name = "Узел3";
+            treeNode20.Text = "Вентиляция";
+            treeNode21.Name = "Узел23";
+            treeNode21.Text = "Тёплые";
+            treeNode22.Name = "Узел4";
+            treeNode22.Text = "Выходы";
+            treeNode23.Name = "Узел5";
+            treeNode23.Text = "Запасные";
+            treeNode24.Name = "Узел22";
+            treeNode24.Text = "Двери";
+            treeNode25.Name = "Узел0";
+            treeNode25.Text = "Узел0";
+            treeNode26.Name = "Узел0";
+            treeNode26.Text = "Сигнализация";
+            treeNode27.Name = "Узел1";
+            treeNode27.Text = "Узел1";
+            treeNode28.Name = "Узел1";
+            treeNode28.Text = "Дым";
+            treeNode29.Name = "Узел2";
+            treeNode29.Text = "Узел2";
+            treeNode30.Name = "Узел2";
+            treeNode30.Text = "Генератор";
+            treeNode31.Name = "Узел3";
+            treeNode31.Text = "Узел3";
+            treeNode32.Name = "Узел3";
+            treeNode32.Text = "Техника";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode145,
-            treeNode150,
-            treeNode155,
-            treeNode160,
-            treeNode164,
-            treeNode165,
-            treeNode166,
-            treeNode167,
-            treeNode168});
+            treeNode5,
+            treeNode10,
+            treeNode15,
+            treeNode20,
+            treeNode24,
+            treeNode26,
+            treeNode28,
+            treeNode30,
+            treeNode32});
             this.treeView1.Size = new System.Drawing.Size(302, 805);
             this.treeView1.TabIndex = 13;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -1607,6 +1641,16 @@
             this.account.Size = new System.Drawing.Size(531, 811);
             this.account.TabIndex = 0;
             // 
+            // quit
+            // 
+            this.quit.Location = new System.Drawing.Point(294, 772);
+            this.quit.Name = "quit";
+            this.quit.Size = new System.Drawing.Size(145, 36);
+            this.quit.TabIndex = 3;
+            this.quit.Text = "Выйти";
+            this.quit.UseVisualStyleBackColor = true;
+            this.quit.Click += new System.EventHandler(this.quit_Click);
+            // 
             // textOFF
             // 
             this.textOFF.Location = new System.Drawing.Point(15, 772);
@@ -1851,69 +1895,118 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // quit
+            // details
             // 
-            this.quit.Location = new System.Drawing.Point(294, 772);
-            this.quit.Name = "quit";
-            this.quit.Size = new System.Drawing.Size(145, 36);
-            this.quit.TabIndex = 3;
-            this.quit.Text = "Выйти";
-            this.quit.UseVisualStyleBackColor = true;
-            this.quit.Click += new System.EventHandler(this.quit_Click);
+            this.details.AutoSize = true;
+            this.details.Location = new System.Drawing.Point(3, 389);
+            this.details.Name = "details";
+            this.details.Size = new System.Drawing.Size(211, 29);
+            this.details.TabIndex = 6;
+            this.details.Text = "Комплектующие:";
             // 
-            // label1
+            // company
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.company.AutoSize = true;
+            this.company.Location = new System.Drawing.Point(3, 320);
+            this.company.Name = "company";
+            this.company.Size = new System.Drawing.Size(135, 29);
+            this.company.TabIndex = 5;
+            this.company.Text = "Компания:";
             // 
-            // label2
+            // postTO
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 117);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.postTO.AutoSize = true;
+            this.postTO.Location = new System.Drawing.Point(3, 251);
+            this.postTO.Name = "postTO";
+            this.postTO.Size = new System.Drawing.Size(149, 29);
+            this.postTO.TabIndex = 4;
+            this.postTO.Text = "Должность:";
             // 
-            // label3
+            // fio
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.fio.AutoSize = true;
+            this.fio.Location = new System.Drawing.Point(3, 182);
+            this.fio.Name = "fio";
+            this.fio.Size = new System.Drawing.Size(259, 29);
+            this.fio.TabIndex = 3;
+            this.fio.Text = "ФИО проверяющего:";
             // 
-            // label4
+            // dateNext
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 212);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 29);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.dateNext.AutoSize = true;
+            this.dateNext.Location = new System.Drawing.Point(3, 113);
+            this.dateNext.Name = "dateNext";
+            this.dateNext.Size = new System.Drawing.Size(247, 29);
+            this.dateNext.TabIndex = 2;
+            this.dateNext.Text = "Дата след. осмотра:";
             // 
-            // label5
+            // datePrev
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 261);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 29);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.datePrev.AutoSize = true;
+            this.datePrev.Location = new System.Drawing.Point(3, 44);
+            this.datePrev.Name = "datePrev";
+            this.datePrev.Size = new System.Drawing.Size(249, 29);
+            this.datePrev.TabIndex = 1;
+            this.datePrev.Text = "Дата пред. осмотра:";
             // 
-            // label6
+            // comment
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(70, 310);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 29);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.comment.AutoSize = true;
+            this.comment.Location = new System.Drawing.Point(3, 458);
+            this.comment.Name = "comment";
+            this.comment.Size = new System.Drawing.Size(183, 29);
+            this.comment.TabIndex = 7;
+            this.comment.Text = "Комментарий:";
+            // 
+            // details_
+            // 
+            this.details_.Location = new System.Drawing.Point(8, 421);
+            this.details_.Name = "details_";
+            this.details_.Size = new System.Drawing.Size(409, 34);
+            this.details_.TabIndex = 9;
+            // 
+            // company_
+            // 
+            this.company_.Location = new System.Drawing.Point(8, 352);
+            this.company_.Name = "company_";
+            this.company_.Size = new System.Drawing.Size(409, 34);
+            this.company_.TabIndex = 10;
+            // 
+            // postTO_
+            // 
+            this.postTO_.Location = new System.Drawing.Point(8, 283);
+            this.postTO_.Name = "postTO_";
+            this.postTO_.Size = new System.Drawing.Size(409, 34);
+            this.postTO_.TabIndex = 11;
+            // 
+            // fio_
+            // 
+            this.fio_.Location = new System.Drawing.Point(8, 214);
+            this.fio_.Name = "fio_";
+            this.fio_.Size = new System.Drawing.Size(409, 34);
+            this.fio_.TabIndex = 12;
+            // 
+            // comment_
+            // 
+            this.comment_.Location = new System.Drawing.Point(8, 490);
+            this.comment_.Multiline = true;
+            this.comment_.Name = "comment_";
+            this.comment_.Size = new System.Drawing.Size(409, 179);
+            this.comment_.TabIndex = 14;
+            // 
+            // datePrev_
+            // 
+            this.datePrev_.Location = new System.Drawing.Point(8, 76);
+            this.datePrev_.Name = "datePrev_";
+            this.datePrev_.Size = new System.Drawing.Size(265, 34);
+            this.datePrev_.TabIndex = 15;
+            // 
+            // dateNext_
+            // 
+            this.dateNext_.Location = new System.Drawing.Point(8, 145);
+            this.dateNext_.Name = "dateNext_";
+            this.dateNext_.Size = new System.Drawing.Size(265, 34);
+            this.dateNext_.TabIndex = 16;
             // 
             // Climate
             // 
@@ -2162,12 +2255,20 @@
         private System.Windows.Forms.GroupBox groupBox22;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Button quit;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label details;
+        private System.Windows.Forms.Label company;
+        private System.Windows.Forms.Label postTO;
+        private System.Windows.Forms.Label fio;
+        private System.Windows.Forms.Label dateNext;
+        private System.Windows.Forms.Label datePrev;
+        private System.Windows.Forms.Label comment;
+        private System.Windows.Forms.DateTimePicker dateNext_;
+        private System.Windows.Forms.DateTimePicker datePrev_;
+        private System.Windows.Forms.TextBox comment_;
+        private System.Windows.Forms.TextBox fio_;
+        private System.Windows.Forms.TextBox postTO_;
+        private System.Windows.Forms.TextBox company_;
+        private System.Windows.Forms.TextBox details_;
     }
 }
 

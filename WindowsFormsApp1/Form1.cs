@@ -22,6 +22,8 @@ using DocumentFormat.OpenXml.Spreadsheet;
 using System.Windows.Controls.Primitives;
 using myFont = System.Drawing.Font;
 using Org.BouncyCastle.Asn1.IsisMtt.Ocsp;
+using System.Windows.Media;
+using LiveCharts.WinForms;
 
 namespace WindowsFormsApp1
 {
@@ -53,6 +55,7 @@ namespace WindowsFormsApp1
             SMPcity.Items.AddRange(SMPcity_);
             SMPcity.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             StartPosition = FormStartPosition.CenterScreen;
+
             chartTemp.LegendLocation = LegendLocation.Bottom;
             chartMoisture.LegendLocation = LegendLocation.Bottom;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -816,6 +819,59 @@ namespace WindowsFormsApp1
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             tech.Visible = true;
+            if(treeView1.SelectedNode.Text == "Терморегистраторы")
+            {
+                plan.ImageLocation = "thermo.png";
+            }
+            if (treeView1.SelectedNode.Text == "Двери")
+            {
+                plan.ImageLocation = "doors.png";
+            }
+            if (treeView1.SelectedNode.Text == "Вентиляция")
+            {
+                plan.ImageLocation = "vento.png";
+            }
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                try
+                {
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open();
+                        string query = $"SELECT * FROM tech ";
+                        using (SqlCommand com = new SqlCommand(query, con))
+                        {
+                            using (SqlDataReader reader = com.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    if (!reader.IsDBNull(1))
+                                    {
+                                        datePrev_.Value = reader.GetDateTime(1);
+                                        dateNext_.Value = reader.GetDateTime(2);
+                                        fio_.Text = reader.GetString(3);
+                                        postTO_.Text = reader.GetString(4);
+                                        company_.Text = reader.GetString(5);
+                                        details_.Text = reader.GetString(6);
+                                        comment_.Text = reader.GetString(7);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Обработка ошибки подключения к базе данных
+                }
+                finally
+                {
+                    if (con.State == ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+            }
         }
 
         public IEnumerable<TreeNode> GetNodes(TreeNodeCollection nodes)
